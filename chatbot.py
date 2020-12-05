@@ -1,6 +1,7 @@
 from model import Net
 from data_loader import *
 from functions import *
+from chuyendoidaitu import *
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 max_tokens_length = 256

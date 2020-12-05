@@ -1,3 +1,4 @@
 /models
 /torch_pre_load
 /vncorenlp
+/__pycache__

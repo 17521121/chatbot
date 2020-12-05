@@ -14,10 +14,12 @@ def index():
 def chat():
    if request.method == 'POST':
       n1 = request.form["n1"]
-      n1 = request.form["n2"]
+      n2 = request.form["n2"]
       chat_text = request.form["chat_text"]
+      #convert
+      chat_text = convert_sentence(chat_text, n1, n2)
       outs = predict(chat_text, top_n = 10, normalize = option.normalize)
-      return clean_answer(outs)
+      return revert_sentence(clean_answer(outs), n1, n2) #revert
 
 if __name__ == '__main__':
    app.run(debug = True)

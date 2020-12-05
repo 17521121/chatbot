@@ -305,3 +305,88 @@
 12/05/2020 03:14:47 PM: [ 127.0.0.1 - - [05/Dec/2020 15:14:47] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
 12/05/2020 03:15:23 PM: [ 127.0.0.1 - - [05/Dec/2020 15:15:23] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
 12/05/2020 03:15:31 PM: [ 127.0.0.1 - - [05/Dec/2020 15:15:31] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/05/2020 09:37:01 PM: [ CONFIG:
+{
+    "batch_size": 32,
+    "display_iter": 100,
+    "epochs": 30,
+    "hits_at_nb_cands": 100,
+    "learning_rate": 1e-05,
+    "log_file": "logs/phobert_normalize_finetuned.txt",
+    "max_turn": 2,
+    "model_file": "models/phobert_normalize_finetuned.pt",
+    "normalize": true,
+    "optimizer": "adamax",
+    "over_sample": true,
+    "prepend": true,
+    "stop_crit_num_epochs": 5,
+    "train": false
+} ]
+12/05/2020 09:37:32 PM: [  * Restarting with stat ]
+12/05/2020 09:37:39 PM: [ CONFIG:
+{
+    "batch_size": 32,
+    "display_iter": 100,
+    "epochs": 30,
+    "hits_at_nb_cands": 100,
+    "learning_rate": 1e-05,
+    "log_file": "logs/phobert_normalize_finetuned.txt",
+    "max_turn": 2,
+    "model_file": "models/phobert_normalize_finetuned.pt",
+    "normalize": true,
+    "optimizer": "adamax",
+    "over_sample": true,
+    "prepend": true,
+    "stop_crit_num_epochs": 5,
+    "train": false
+} ]
+12/05/2020 09:37:58 PM: [  * Debugger is active! ]
+12/05/2020 09:37:58 PM: [  * Debugger PIN: 279-527-730 ]
+12/05/2020 09:37:58 PM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/05/2020 09:51:56 PM: [ 127.0.0.1 - - [05/Dec/2020 21:51:56] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/05/2020 09:51:56 PM: [ 127.0.0.1 - - [05/Dec/2020 21:51:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/05/2020 10:01:45 PM: [ CONFIG:
+{
+    "batch_size": 32,
+    "display_iter": 100,
+    "epochs": 30,
+    "hits_at_nb_cands": 100,
+    "learning_rate": 1e-05,
+    "log_file": "logs/phobert_normalize_finetuned.txt",
+    "max_turn": 2,
+    "model_file": "models/phobert_normalize_finetuned.pt",
+    "normalize": true,
+    "optimizer": "adamax",
+    "over_sample": true,
+    "prepend": true,
+    "stop_crit_num_epochs": 5,
+    "train": false
+} ]
+12/05/2020 10:02:08 PM: [  * Restarting with stat ]
+12/05/2020 10:02:17 PM: [ CONFIG:
+{
+    "batch_size": 32,
+    "display_iter": 100,
+    "epochs": 30,
+    "hits_at_nb_cands": 100,
+    "learning_rate": 1e-05,
+    "log_file": "logs/phobert_normalize_finetuned.txt",
+    "max_turn": 2,
+    "model_file": "models/phobert_normalize_finetuned.pt",
+    "normalize": true,
+    "optimizer": "adamax",
+    "over_sample": true,
+    "prepend": true,
+    "stop_crit_num_epochs": 5,
+    "train": false
+} ]
+12/05/2020 10:02:28 PM: [  * Debugger is active! ]
+12/05/2020 10:02:28 PM: [  * Debugger PIN: 279-527-730 ]
+12/05/2020 10:02:28 PM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/05/2020 10:02:42 PM: [ 127.0.0.1 - - [05/Dec/2020 22:02:42] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/05/2020 10:02:42 PM: [ 127.0.0.1 - - [05/Dec/2020 22:02:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/05/2020 10:03:11 PM: [ 127.0.0.1 - - [05/Dec/2020 22:03:11] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/05/2020 10:03:22 PM: [ 127.0.0.1 - - [05/Dec/2020 22:03:22] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/05/2020 10:03:30 PM: [ 127.0.0.1 - - [05/Dec/2020 22:03:30] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/05/2020 10:05:12 PM: [ 127.0.0.1 - - [05/Dec/2020 22:05:12] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/05/2020 10:10:42 PM: [  * Detected change in 'E:\\Project\\flask chatbot\\chuyendoidaitu.py', reloading ]
