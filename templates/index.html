@@ -2,8 +2,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/all.css">
+    {{ fontawesome_html() }}
+    <link rel="stylesheet" href=" {{ url_for('static', filename = 'style.css') }}">
+    <title>Chatbot</title>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
     </div>
     <div class="input_box">
         <div class="input_holder">
-            <textarea name="chat_text" rows="2" class="chat_text"></textarea>
+            <textarea name="chat_text" rows="2" class="chat_text" onkeypress="return submit_chat(event)"></textarea>
         </div>
 
-        <div class="icon_send">
+        <div class="icon_send" onclick="click_submit()">
             <a href="javascript:void(0)">
                 <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </a>
@@ -27,33 +28,99 @@
 
     </div>
     <div class="pronoun">
-        <div class="n1">
-            <img src="/static/img/robot_chat.png" width="100px" height="100px" alt="">
-            <input type="text" name="n1">
+        <div class="n2">
+
+            <img src="{{ url_for('static', filename = 'img/robot_chat.png') }}" width="100px" height="100px" alt="">
+            <input type="text" name="n2" value="Bạn" id="n2">
         </div>
         <div class="arrow">
             <span>&uarr;</span>
         </div>
-        <div class="n2">
-            <img src="/static/img/human_chat.png" width="100px" height="100px" alt="">
-            <input type="text" name="n2">
+        <div class="n1">
+            <img src="{{ url_for('static', filename = 'img/human_chat.png') }}" width="100px" height="100px" alt="">
+            <input type="text" name="n1" id="n1" value="Tôi">
         </div>
     </div>
-    <script src="/static/jquery-3.5.1.min.js"></script>
 
+    <script src="{{ url_for('static', filename = 'jquery-3.5.1.min.js') }}"></script>
     <script>
-        let context = ["ctx 1", "ctx 3"]
-        let response = ["res2", "res4"]
+        // for (let i = 0; i < 10; i++)
+        //     show_text.innerHTML +=
+        //         `<div class="left">
+        //                 Lúc nãy đi ngoài đường tôi làm rớt ví, may mà có cậu bé nhặt và trả lại được.
+        //             </div>
+        //             <div class="right">
+        //                 ChàoHelloHelloHelloHelloHelloHelloHelloHeddddd
+        //             </div>
+        //             `
+
+        // text trong khung chát
         let show_text = document.getElementsByClassName('show_text')[0]
-        for (let i = 0; i < 10; i++)
-            show_text.innerHTML +=
-                `<div class="left">
-                        Lúc nãy đi ngoài đường tôi làm rớt ví, may mà có cậu bé nhặt và trả lại được.
-                    </div>
-                    <div class="right">
-                        ChàoHelloHelloHelloHelloHelloHelloHelloHeddddd
-                    </div>
+        let n1 = document.getElementById("n1")
+        let n2 = document.getElementById("n2")
+        let chat_text = document.getElementsByClassName("chat_text")[0]
+
+        function send_chat() {
+
+            let data = { "n1": n1.value, "n2": n2.value, "chat_text": chat_text.value.trim() }
+
+            //add chat lên khung
+            show_text.innerHTML += `
+                        <div class="right">
+                            ${data.chat_text}
+                        </div>
                     `
+            
+            //Kéo scroll xuống cuối
+            $('.show_text').stop().animate({
+                scrollTop: $('.show_text')[0].scrollHeight
+            }, 800);
+
+            //xoá chat trong khung chat
+            chat_text.value = ""
+
+
+            $.post(
+                "chat",
+                data,
+
+                function (result) { //thành công
+                    //add chat lên khung
+                    show_text.innerHTML += `
+                        <div class="left">
+                            ${result}
+                        </div>
+                    `
+
+                    //Kéo scroll xuống cuối
+                    $('.show_text').stop().animate({
+                        scrollTop: $('.show_text')[0].scrollHeight
+                    }, 800);
+                }
+            )
+        }
+
+        function submit_chat(e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                if (chat_text.value.trim() == "")
+                    return
+                //Shift enter skip
+                if (e.shiftKey) {
+                    return
+                }
+                //Xử lí api
+                send_chat()
+            }
+
+        }
+
+        function click_submit() {
+            if (chat_text.value.trim() == "")
+                return
+            //Xử lí api
+            send_chat()
+        }
     </script>
 
 
