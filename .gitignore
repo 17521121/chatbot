@@ -1,4 +1,6 @@
-/models
-/torch_pre_load
-/vncorenlp
-/__pycache__
+models
+torch_pre_load
+vncorenlp
+*.py[co]
+test.py
+ED

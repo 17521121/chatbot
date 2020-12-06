@@ -28,7 +28,7 @@ def get_logger(opt):
     # logger.info(f"COMMAND: {command}")
     # logger.info("-" * 100)
     config = json.dumps(vars(opt), indent=4, sort_keys=True)
-    logger.info(f"CONFIG:\n{config}")
+    # logger.info(f"CONFIG:\n{config}")
     return logger
 
 

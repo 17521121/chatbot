@@ -99,6 +99,6 @@ def revert_sentence(sentence, n1, n2):
     return " ".join(sentence)
 
 
-while(1):
-    sentence = input()
-    print("--> " + revert_sentence(sentence, "tao", "mày"))
+# while(1):
+#     sentence = input()
+#     print("--> " + revert_sentence(sentence, "anh", "em"))
