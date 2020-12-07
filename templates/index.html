@@ -73,12 +73,16 @@
             </select>
         </div>
     </div>
-
+    <div class="end_chat" onclick="end_chat()">
+        <a href="javascript:void(0)">
+            Kết thúc!
+        </a>
+    </div>
     <script src="{{ url_for('static', filename = 'jquery-3.5.1.min.js') }}"></script>
     <script>
         let ctx = []
         let res=  []
-        let emo = []
+        let emo = ["neutral"]
         // text trong khung chát
         let show_text = document.getElementsByClassName('show_text')[0]
         let n1 = document.getElementById("n1")
@@ -91,7 +95,71 @@
         function n2_change() {
             n1.selectedIndex = n2.selectedIndex 
         }
-        
+
+        function end_chat() {
+            let data = { "n1": n1.value, "n2": n2.value, "emo_text": emo[emo.length - 1]}
+            $.post(
+                "bye_chatbot",
+                data,
+                function (data) { //thành công
+                    
+                    //add chat lên khung
+                    show_text.innerHTML += `
+                        <div class="left">
+                            ${data}
+                        </div>
+                    `
+                    //Kéo scroll xuống cuối
+                    $('.show_text').stop().animate({
+                        scrollTop: $('.show_text')[0].scrollHeight
+                    }, 800);
+                }
+            )
+        }
+
+        function keep_conversation() {
+            let data = { "n1": n1.value, "n2": n2.value, "emo_text": emo[emo.length - 1]}
+            $.post(
+                "keep_conversation_chatbot",
+                data,
+                function (data) { //thành công
+                    
+                    //add chat lên khung
+                    show_text.innerHTML += `
+                        <div class="left">
+                            ${data}
+                        </div>
+                    `
+                    //Kéo scroll xuống cuối
+                    $('.show_text').stop().animate({
+                        scrollTop: $('.show_text')[0].scrollHeight
+                    }, 800);
+                }
+            )
+        }
+
+        function start_chat() {
+            $.post(
+                "hello_chatbot",
+                {},
+                function (data) { //thành công
+                    
+                    //add chat lên khung
+                    show_text.innerHTML += `
+                        <div class="left">
+                            ${data}
+                        </div>
+                    `
+                    //Kéo scroll xuống cuối
+                    $('.show_text').stop().animate({
+                        scrollTop: $('.show_text')[0].scrollHeight
+                    }, 800);
+                }
+            )
+        }
+
+        start_chat()
+
         function send_chat() {
             let send_text = [];
             // if (res.length > 0) {
@@ -100,7 +168,7 @@
             // else {
             //     send_text = [chat_text.value.trim()]
             // }
-
+            
             send_text = [chat_text.value.trim().replace("?", "").replace("!", "")] //turn = 1
             ctx.push(send_text[send_text.length - 1])
             let data = { "n1": n1.value, "n2": n2.value, "chat_text": send_text.join(" | ") }
@@ -119,7 +187,6 @@
 
             //xoá chat trong khung chat
             chat_text.value = ""
-
 
             $.post(
                 "chat",
@@ -143,6 +210,9 @@
                     }, 800);
                 }
             )
+
+            clearInterval(keep_conversation);
+            setInterval(keep_conversation, 20000);
         }
 
         function submit_chat(e) {
@@ -161,12 +231,15 @@
         }
 
         function click_submit() {
+
             if (chat_text.value.trim() == "")
                 return
             //Xử lí api
             send_chat()
         }
-    </script>
+   
+
+   </script>
 
 
 </body>

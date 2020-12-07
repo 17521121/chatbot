@@ -11,28 +11,6 @@ pad_idx  = tokenizer.pad_token_id
 
 from sklearn.preprocessing import LabelEncoder
 
-# all_emotions_cls = [ 
-#               ["devastated", "sad", "terrified", "afraid", "ashamed",
-#               "guilty", "anxious", "angry", "furious","annoyed",
-#               "disgusted" ,"embarrassed","disappointed", "lonely", "jealous"],
-#               ["confident","prepared","excited","grateful","caring", 'surprised','impressed','hopeful','faithful','trusting','proud','content'],
-#               ["sentimental", "nostalgic", ]
-#             ]
-
-# BROKEN_LABELS_cls = ["anticipating", "apprehensive", "joyful",
-#                   #"nostalgic", "sentimental"
-#                  ]
-
-# numOfLabels_cls = len(all_emotions_cls)
-# all_labels_cls = []
-# for i in all_emotions_cls:
-#     all_labels_cls.append(i[0])
-
-# lbEnc_cls = LabelEncoder()
-# lbEnc_cls.fit(all_labels_cls)
-# all_labels_cls = list(lbEnc_cls.classes_)
-
-
 all_labels = ['angry', 'annoyed', 'furious', 'disgusted', 'confident', 'prepared', 
               'excited', 'surprised', 'impressed', 'hopeful', 'faithful', 'trusting', 'proud', 'joyful', 'content',
               'sentimental', 'grateful', 'caring',
@@ -153,16 +131,6 @@ class EmpDataset(data.Dataset):
                         history[-1] = history[-1].replace("?", "").replace("!", "").strip()
                         sentence1 = " | ".join(history[-self.max_hist_len :]) 
                         self.data.append([txt2vec(sentence1, maxlen), txt2vec(sentence2, maxlen), sparts[2]])
-                        
-                    # else:
-                    #     predict_label = cls_net(txt2vec(history[-1], maxlen)).argmax()
-                    #     his = str (int (predict_label.argmax().cpu())) + " " + history[-1]
-                    #     self.data.append([txt2vec(his, maxlen), txt2vec(" 1 " + sentence2, maxlen), sparts[2]])
-                    #     if len(history) != 1:
-                    #         sentence1 = " | ".join(history[0::2][-self.max_hist_len :])
-                    #         predict_label = cls_net(txt2vec(sentence1, maxlen)).argmax()
-                    #         his = str (int (predict_label.argmax().cpu())) + " " + " | ".join(history[-self.max_hist_len :]) 
-                    #         self.data.append([txt2vec(his, maxlen), txt2vec(" 0 " + sentence2, maxlen), sparts[2]])
                         
             else:
                 history = []

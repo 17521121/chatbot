@@ -5,6 +5,8 @@ from model import Net
 from data_loader import *
 from functions import *
 from chuyendoidaitu import *
+from duytridoithoai import *
+
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 max_tokens_length = 256
@@ -134,15 +136,24 @@ def clean_answer(outs):
     return outs[0][0][1], outs[0][0][2]
 
 
-# n1 = "tôi"
-# n2 = "bạn"
-# # his = []
+# n1 = ["tôi", "bạn"]
+# n2 = ["mẹ", "con"]
+# his = []
 # while 1:
 #     chat_text = input()
-#     # his.append(chat_text)
-#     chat_text = convert_sentence(chat_text, n1, n2)
-#     outs = predict(chat_text, top_n = 3, normalize = option.normalize)
-#     out, emo_text = clean_answer(outs)
-#     out = revert_sentence(out, n1, n2)
+#     chat_text = convert_sentence(chat_text, n1[0], n1[1])
+
+#     if chat_text  in user_hello:
+#         out = hello_user()
+#     elif chat_text in user_say_bye:
+#         out = bye_user()
+#     else:
+#         his.append(chat_text)
+#         outs = predict(" | ".join(his[-1:]), top_n = 3, normalize = option.normalize)
+#         out, emo_text = clean_answer(outs)
+#         his.append(out)
+
+#     out = revert_sentence(out, n2[0], n2[1]) 
+
 #     out = '. '.join(i.capitalize() for i in out.split(' . '))
 #     print(out)

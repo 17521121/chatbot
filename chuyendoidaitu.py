@@ -66,7 +66,7 @@ def convert_sentence(input, n1, n2):
             if i == len(sentence) - 1:
                 token = 'bạn'
         output.append(token)
-    return " ".join(output)
+    return " ".join(output).lower()
 
 # Tra ve cho nguoi dung
 def revert_sentence(sentence, n1, n2):
@@ -96,7 +96,7 @@ def revert_sentence(sentence, n1, n2):
         else:
             sentence[i] = n2
 
-    return " ".join(sentence)
+    return " ".join(sentence).lower()
 
 
 # while(1):

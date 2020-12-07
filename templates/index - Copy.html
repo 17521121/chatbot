@@ -46,13 +46,13 @@
                 <option value="con-ba">con-ba</option>
                 <option value="cháu-chú">cháu-chú</option>
                 <option value="cháu-cô">cháu-cô</option>
-                
-              </select>
+
+            </select>
         </div>
         <div class="arrow">
             <span>&uarr;</span>
         </div>
-        <div class="n1" >
+        <div class="n1">
             <img src="/static/img/human_chat.png" width="100px" height="100px" alt="">
             <!-- <input type="text" name="n2"> -->
             <select class="select-css" name="n1" id="n1" onchange="n1_change()">
@@ -71,21 +71,27 @@
                 <option value="ba-con">ba-con</option>
                 <option value="chú-cháu">chú-cháu</option>
                 <option value="cô-cháu">cô-cháu</option>
-              </select>
+            </select>
         </div>
+    </div>
+
+    <div class="end_chat">
+        <a href="javascript:void(0)">
+            Kết thúc!
+        </a>
     </div>
     <script src="/static/jquery-3.5.1.min.js"></script>
 
     <script>
-        
+
         let show_text = document.getElementsByClassName('show_text')[0]
         let n1 = document.getElementById("n1")
         let n2 = document.getElementById("n2")
         function n1_change() {
-            n2.selectedIndex = n1.selectedIndex 
+            n2.selectedIndex = n1.selectedIndex
         }
         function n2_change() {
-            n1.selectedIndex = n2.selectedIndex 
+            n1.selectedIndex = n2.selectedIndex
         }
     </script>
 
