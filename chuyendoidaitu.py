@@ -71,7 +71,7 @@ def convert_sentence(input, n1, n2):
 # Tra ve cho nguoi dung
 def revert_sentence(sentence, n1, n2):
     for i in high_frequent_phrase:
-        sentence = sentence.replace(i, "_".join(i.split(" ")))
+        sentence = sentence.replace(i, "_".join(i.split(" "))).replace(",", " , ").replace(".", " . ").replace("?", " ? ").replace("!", " ! ").replace("  ", " ")
 
     sentence = sentence.lower().split(" ")
     index = []
@@ -101,4 +101,4 @@ def revert_sentence(sentence, n1, n2):
 
 # while(1):
 #     sentence = input()
-#     print("--> " + revert_sentence(sentence, "anh", "em"))
+#     print("--> " + revert_sentence(sentence, "mẹ", "con"))

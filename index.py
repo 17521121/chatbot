@@ -31,6 +31,7 @@ def chat():
          out, emo_text = clean_answer(outs)
       out = revert_sentence(out, n2[0], n2[1]) 
       out = '. '.join(i.capitalize() for i in out.split(' . '))
+  
       return {"text": out, "emo_text": emo_text}
 
 @app.route("/keep_conversation_chatbot", methods = ["POST"])

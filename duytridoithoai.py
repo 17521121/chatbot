@@ -60,7 +60,7 @@ user_hello = [
 ]
 
 reply_hello = [
-    "Tôi có thể giúp gì được bạn không ",
+    "Tôi có thể giúp gì được bạn không ?",
     "Có chuyện gì vậy ?",
     "Tôi đây, có vấn đề gì với bạn sao ?",
     "Thật hân hạnh khi bạn nhớ đến tôi, bạn có muốn nói gì với tôi à ?",
@@ -160,4 +160,4 @@ def keep_conversation(emo):
     # emo = input()
     # input()
     # print(keep_conversation(emo))
-#     print(hello_user())
+    # print(hello_user())
