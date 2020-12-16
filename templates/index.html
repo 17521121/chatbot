@@ -82,7 +82,8 @@
     <script>
         let ctx = []
         let res=  []
-        let emo = ["neutral"]
+        let emo = ["sentimental"]
+        var interVal
         // text trong khung chát
         let show_text = document.getElementsByClassName('show_text')[0]
         let n1 = document.getElementById("n1")
@@ -115,6 +116,7 @@
                     }, 800);
                 }
             )
+            clearInterval(interVal);
         }
 
         function keep_conversation() {
@@ -211,8 +213,8 @@
                 }
             )
 
-            clearInterval(keep_conversation);
-            setInterval(keep_conversation, 20000);
+            clearInterval(interVal);
+            interVal = setInterval(keep_conversation, 40000);
         }
 
         function submit_chat(e) {

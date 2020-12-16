@@ -155,8 +155,9 @@ def keep_conversation(emo):
 
 
 
-
+# emo = "sentimental"
 # while 1:
-#     emo = input()
-#     print(keep_conversation(emo))
+    # emo = input()
+    # input()
+    # print(keep_conversation(emo))
 #     print(hello_user())

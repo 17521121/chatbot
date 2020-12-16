@@ -21,8 +21,10 @@ def chat():
          # không dùng lịch sử nên tạm thời chấp nhận đoạn này
       if chat_text  in user_hello:
          out = hello_user()
+         emo_text = "sentimental"
       elif chat_text in user_say_bye:
          out = bye_user()
+         emo_text = "sentimental"
       else:
          # chat_text đã join |
          outs = predict(chat_text, top_n = 3, normalize = option.normalize)

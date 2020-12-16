@@ -154,6 +154,5 @@ def clean_answer(outs):
 #         his.append(out)
 
 #     out = revert_sentence(out, n2[0], n2[1]) 
-
 #     out = '. '.join(i.capitalize() for i in out.split(' . '))
 #     print(out)
