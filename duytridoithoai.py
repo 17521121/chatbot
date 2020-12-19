@@ -1,35 +1,35 @@
 import random
 
 positive = [
-    "Bạn đâu rồi, vui quá nên quên tôi rồi chăng ?",
+    "Bạn đâu rồi , vui quá nên quên tôi rồi chăng ?",
     "Người ơi người đâu rồi ?",
     "Hay chia sẻ niềm vui cùng nhau nào đừng im lặng mà vui một mình như thế chứ ?",
     "Bạn đang tận hưởng niềm vui à ?",
-    "Có chuyện gì hay kể tôi nghe nữa, đừng im lặng thế chứ ?",
+    "Có chuyện gì hay kể tôi nghe nữa , đừng im lặng thế chứ ?",
     "Thật vui nếu như bạn tiếp tục trò chuyện cùng tôi đấy ",
 ]
 
 negative = [
     "Bạn vẫn còn buồn à ?",
-    "Bạn đâu rồi, đừng buồn nữa người ơi ?",
+    "Bạn đâu rồi , đừng buồn nữa người ơi ?",
     "Bạn đang khóc sao ?",
-    "Bạn đừng lặng im như vậy, hãy trò chuyện với tôi đi, tôi sẵn lòng tâm sự cùng bạn",
-    "Có chuyện gì hãy tâm sự cùng tôi, đừng lặng im như vậy",
+    "Bạn đừng lặng im như vậy , hãy trò chuyện với tôi đi , tôi sẵn lòng tâm sự cùng bạn",
+    "Có chuyện gì hãy tâm sự cùng tôi , đừng lặng im như vậy",
     "Bạn không xem tôi là bạn hay sao mà im lặng không tâm sự với tôi nữa ?",
 ]
 
 neutral = [
     "Bạn đang bận à ?",
-    "Người ơi, người đâu rồi ?",
-    "Bạn gì ơi, bạn bỏ quên tôi rồi nè",
+    "Người ơi , người đâu rồi ?",
+    "Bạn gì ơi , bạn bỏ quên tôi rồi nè",
     "Tôi đang đứng đợi bạn từ chiều giờ",
     "Bạn đâu rồi ?",
     "Thật vui nếu như bạn tiếp tục trò chuyện cùng tôi đấy ",
 ]
 
 first_hello = [
-    "Chào bạn, mình họ chát tên bót, hân hạnh gặp bạn!",
-    "Mình là chatbot, bạn hãy chia sẻ câu chuyện hôm nay của bạn với mình đi."
+    "Chào bạn , mình họ chát tên bót , hân hạnh gặp bạn!",
+    "Mình là chatbot , bạn hãy chia sẻ câu chuyện hôm nay của bạn với mình đi."
 ]
 
 
@@ -62,11 +62,11 @@ user_hello = [
 reply_hello = [
     "Tôi có thể giúp gì được bạn không ?",
     "Có chuyện gì vậy ?",
-    "Tôi đây, có vấn đề gì với bạn sao ?",
-    "Thật hân hạnh khi bạn nhớ đến tôi, bạn có muốn nói gì với tôi à ?",
-    "Rất vui khi bạn nhắn cho tôi, có chuyện gì với bạn à ?",
-    "Hãy kể câu chuyện của bạn cho tôi nghe đi, tôi hứa sẽ tâm sự với bạn một cách chân thành",
-    "Thật tốt khi bạn trò chuyện với tôi, thế hôm nay bạn như thế nào ?",
+    "Tôi đây , có vấn đề gì với bạn sao ?",
+    "Thật hân hạnh khi bạn nhớ đến tôi , bạn có muốn nói gì với tôi à ?",
+    "Rất vui khi bạn nhắn cho tôi , có chuyện gì với bạn à ?",
+    "Hãy kể câu chuyện của bạn cho tôi nghe đi , tôi hứa sẽ tâm sự với bạn một cách chân thành",
+    "Thật tốt khi bạn trò chuyện với tôi , thế hôm nay bạn như thế nào ?",
 ]
 
 def hello_user():
@@ -82,17 +82,17 @@ user_say_bye = [
     "bai nhé",
     "chào nha",
     "hẹn gặp lại",
-    "bai, hẹn gặp lại",
+    "bai , hẹn gặp lại",
 ]
 
 
 bye_to_user = [
-    "Tạm biệt bạn, rất vui khi được trò chuyện với bạn",
+    "Tạm biệt bạn , rất vui khi được trò chuyện với bạn",
     "Cảm ơn bạn đã giành thời gian trò chuyện với tôi",
-    "Cảm ơn bạn, hẹn gặp lại bạn trong một ngày không xa",
-    "Cảm ơn bạn nhiều, hãy nhớ đến tôi thường xuyên nhé",
-    "Cảm ơn bạn vì đã trò chuyện cùng tôi, chúc bạn có một ngày vui vẻ",
-    "Thật hạnh phúc khi bạn trò chuyện với tôi như thế này, tạm biệt và hẹn gặp lại bạn",
+    "Cảm ơn bạn , hẹn gặp lại bạn trong một ngày không xa",
+    "Cảm ơn bạn nhiều , hãy nhớ đến tôi thường xuyên nhé",
+    "Cảm ơn bạn vì đã trò chuyện cùng tôi , chúc bạn có một ngày vui vẻ",
+    "Thật hạnh phúc khi bạn trò chuyện với tôi như thế này , tạm biệt và hẹn gặp lại bạn",
 ]
 
 

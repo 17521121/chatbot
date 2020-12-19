@@ -1582,3 +1582,374 @@ UnboundLocalError: local variable 'emo_text' referenced before assignment
 12/16/2020 12:18:42 PM: [ 127.0.0.1 - - [16/Dec/2020 12:18:42] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
 12/16/2020 12:18:54 PM: [ 127.0.0.1 - - [16/Dec/2020 12:18:54] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
 12/16/2020 12:19:06 PM: [ 127.0.0.1 - - [16/Dec/2020 12:19:06] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 03:27:15 PM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/fontawesome/css/solid.min.css?version=5.14.0 HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/fontawesome/css/fontawesome.min.css?version=5.14.0 HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/img/robot_chat.png HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/img/human_chat.png HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/jquery-3.5.1.min.js HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 03:27:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:19] "[36mGET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 - ]
+12/17/2020 03:27:20 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/17/2020 03:27:32 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:32] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 03:27:32 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:32] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 03:27:32 PM: [ 127.0.0.1 - - [17/Dec/2020 15:27:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/17/2020 03:29:18 PM: [ 127.0.0.1 - - [17/Dec/2020 15:29:18] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 03:29:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:29:19] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 03:29:19 PM: [ 127.0.0.1 - - [17/Dec/2020 15:29:19] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 03:31:58 PM: [ 127.0.0.1 - - [17/Dec/2020 15:31:58] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 03:32:03 PM: [ 127.0.0.1 - - [17/Dec/2020 15:32:03] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 03:32:03 PM: [ 127.0.0.1 - - [17/Dec/2020 15:32:03] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 03:45:25 PM: [ 127.0.0.1 - - [17/Dec/2020 15:45:25] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 03:45:25 PM: [ 127.0.0.1 - - [17/Dec/2020 15:45:25] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:09:42 PM: [ 127.0.0.1 - - [17/Dec/2020 16:09:42] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:09:45 PM: [ 127.0.0.1 - - [17/Dec/2020 16:09:45] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:09:46 PM: [ 127.0.0.1 - - [17/Dec/2020 16:09:46] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:09:46 PM: [ 127.0.0.1 - - [17/Dec/2020 16:09:46] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:25 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:25] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:26 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:26] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:27 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:27] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:33 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:33] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:37 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:37] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:37 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:37] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:39 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:39] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:39 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:39] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:39 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:39] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:40 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:40] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:40 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:40] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:40 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:40] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:40 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:40] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:40 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:40] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:19:45 PM: [ 127.0.0.1 - - [17/Dec/2020 16:19:45] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:20:25 PM: [ 127.0.0.1 - - [17/Dec/2020 16:20:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:20:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:20:29] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:21:09 PM: [ 127.0.0.1 - - [17/Dec/2020 16:21:09] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:21:49 PM: [ 127.0.0.1 - - [17/Dec/2020 16:21:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:22:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:22:29] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:23:09 PM: [ 127.0.0.1 - - [17/Dec/2020 16:23:09] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:23:49 PM: [ 127.0.0.1 - - [17/Dec/2020 16:23:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:24:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:24:29] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:25:09 PM: [ 127.0.0.1 - - [17/Dec/2020 16:25:09] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:25:49 PM: [ 127.0.0.1 - - [17/Dec/2020 16:25:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:26:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:26:29] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:27:09 PM: [ 127.0.0.1 - - [17/Dec/2020 16:27:09] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:27:49 PM: [ 127.0.0.1 - - [17/Dec/2020 16:27:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:28:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:28:29] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:28:32 PM: [ 127.0.0.1 - - [17/Dec/2020 16:28:32] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:28:32 PM: [ 127.0.0.1 - - [17/Dec/2020 16:28:32] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:36:57 PM: [ 127.0.0.1 - - [17/Dec/2020 16:36:57] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:36:57 PM: [ 127.0.0.1 - - [17/Dec/2020 16:36:57] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:36:58 PM: [ 127.0.0.1 - - [17/Dec/2020 16:36:58] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:36:58 PM: [ 127.0.0.1 - - [17/Dec/2020 16:36:58] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:37:14 PM: [ 127.0.0.1 - - [17/Dec/2020 16:37:14] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:37:54 PM: [ 127.0.0.1 - - [17/Dec/2020 16:37:54] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:37:57 PM: [ 127.0.0.1 - - [17/Dec/2020 16:37:57] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:38:23 PM: [ 127.0.0.1 - - [17/Dec/2020 16:38:23] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:39:02 PM: [ 127.0.0.1 - - [17/Dec/2020 16:39:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:39:42 PM: [ 127.0.0.1 - - [17/Dec/2020 16:39:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:40:22 PM: [ 127.0.0.1 - - [17/Dec/2020 16:40:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:02 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:22 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:22] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:23 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:23] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:26 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:26] "[37mPOST /bye_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:29] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:29 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:29] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:41:43 PM: [ 127.0.0.1 - - [17/Dec/2020 16:41:43] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:42:10 PM: [ 127.0.0.1 - - [17/Dec/2020 16:42:10] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:42:42 PM: [ 127.0.0.1 - - [17/Dec/2020 16:42:42] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/17/2020 04:43:22 PM: [ 127.0.0.1 - - [17/Dec/2020 16:43:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:44:02 PM: [ 127.0.0.1 - - [17/Dec/2020 16:44:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:44:42 PM: [ 127.0.0.1 - - [17/Dec/2020 16:44:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:45:22 PM: [ 127.0.0.1 - - [17/Dec/2020 16:45:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/17/2020 04:45:25 PM: [ 127.0.0.1 - - [17/Dec/2020 16:45:25] "[37mPOST /bye_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:00 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/style.css HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/fontawesome/css/solid.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/fontawesome/css/fontawesome.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/img/robot_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/img/human_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:06 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:06] "[37mGET /static/jquery-3.5.1.min.js HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:07 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:07] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:07 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:07] "[37mGET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:07 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/18/2020 09:13:20 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:20] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 09:13:29 AM: [ 127.0.0.1 - - [18/Dec/2020 09:13:29] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 09:14:09 AM: [ 127.0.0.1 - - [18/Dec/2020 09:14:09] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 09:14:49 AM: [ 127.0.0.1 - - [18/Dec/2020 09:14:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 09:15:29 AM: [ 127.0.0.1 - - [18/Dec/2020 09:15:29] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 09:15:57 AM: [ 127.0.0.1 - - [18/Dec/2020 09:15:57] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 09:16:02 AM: [ 127.0.0.1 - - [18/Dec/2020 09:16:02] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 09:16:09 AM: [ 127.0.0.1 - - [18/Dec/2020 09:16:09] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 09:16:49 AM: [ 127.0.0.1 - - [18/Dec/2020 09:16:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:02:41 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/fontawesome/css/fontawesome.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/style.css HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/fontawesome/css/solid.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/jquery-3.5.1.min.js HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/img/robot_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:58 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:58] "[37mGET /static/img/human_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:59 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:59] "[37mGET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:03:59 AM: [ 127.0.0.1 - - [18/Dec/2020 10:03:59] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:04:09 AM: [ 127.0.0.1 - - [18/Dec/2020 10:04:09] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:04:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:04:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:05:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:05:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:06:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:06:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:06:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:06:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:07:35 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:07:48 AM: [ 127.0.0.1 - - [18/Dec/2020 10:07:48] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:07:49 AM: [ 127.0.0.1 - - [18/Dec/2020 10:07:49] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:07:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:07:53] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:08:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:08:02] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:08:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:08:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:08:41 AM: [ 127.0.0.1 - - [18/Dec/2020 10:08:41] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:08:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:08:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:09:21 AM: [ 127.0.0.1 - - [18/Dec/2020 10:09:21] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:09:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:09:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:10:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:10:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:10:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:10:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:10:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:10:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:10:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:10:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:11:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:11:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:11:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:11:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:12:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:12:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:12:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:12:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:12:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:12:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:12:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:12:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:13:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:13:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:13:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:13:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:14:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:14:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:14:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:14:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:14:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:14:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:14:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:14:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:15:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:15:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:15:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:15:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:16:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:16:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:16:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:16:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:16:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:16:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:16:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:16:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:17:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:17:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:17:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:17:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:18:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:18:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:18:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:18:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:18:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:18:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:18:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:18:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:19:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:19:22] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:19:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:19:25] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:20:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:20:02] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:20:05 AM: [ 127.0.0.1 - - [18/Dec/2020 10:20:05] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:20:42 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:20:42 AM: [ 127.0.0.1 - - [18/Dec/2020 10:20:42] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:20:45 AM: [ 127.0.0.1 - - [18/Dec/2020 10:20:45] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:19 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:19] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:19 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:19] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:23 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:23] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:23 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:23] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:24 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:24] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:24 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:24] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:25] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:25] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:25] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:26] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:26] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:26] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:26] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:26] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:21:33 AM: [ Exception on /chat [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\Project\flask chatbot\index.py", line 53, in chat
+    return {"text": format_output(out), "emo_text": emo_text}
+  File "e:\Project\flask chatbot\index.py", line 22, in format_output
+    out[i+2] = out[i+2].upper()
+TypeError: 'str' object does not support item assignment
+12/18/2020 10:21:33 AM: [ 127.0.0.1 - - [18/Dec/2020 10:21:33] "[35m[1mPOST /chat HTTP/1.1[0m" 500 - ]
+12/18/2020 10:22:13 AM: [ 127.0.0.1 - - [18/Dec/2020 10:22:13] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:22:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:22:53] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:23:33 AM: [ 127.0.0.1 - - [18/Dec/2020 10:23:33] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:24:13 AM: [ 127.0.0.1 - - [18/Dec/2020 10:24:13] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:24:55 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:24:55 AM: [ Exception on /keep_conversation_chatbot [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\Project\flask chatbot\index.py", line 62, in keep_conversation_chatbot
+    return format_output(out)
+  File "e:\Project\flask chatbot\index.py", line 20, in format_output
+    rs = out.split("")
+ValueError: empty separator
+12/18/2020 10:24:55 AM: [ 127.0.0.1 - - [18/Dec/2020 10:24:55] "[35m[1mPOST /keep_conversation_chatbot HTTP/1.1[0m" 500 - ]
+12/18/2020 10:25:33 AM: [ Exception on /keep_conversation_chatbot [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\Project\flask chatbot\index.py", line 62, in keep_conversation_chatbot
+    return format_output(out)
+  File "e:\Project\flask chatbot\index.py", line 20, in format_output
+    rs = out.split("")
+ValueError: empty separator
+12/18/2020 10:25:33 AM: [ 127.0.0.1 - - [18/Dec/2020 10:25:33] "[35m[1mPOST /keep_conversation_chatbot HTTP/1.1[0m" 500 - ]
+12/18/2020 10:26:13 AM: [ Exception on /keep_conversation_chatbot [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\Project\flask chatbot\index.py", line 62, in keep_conversation_chatbot
+    if request.method == 'POST':
+  File "e:\Project\flask chatbot\index.py", line 20, in format_output
+    out = out.replace(" !", "!")
+ValueError: empty separator
+12/18/2020 10:26:13 AM: [ 127.0.0.1 - - [18/Dec/2020 10:26:13] "[35m[1mPOST /keep_conversation_chatbot HTTP/1.1[0m" 500 - ]
+12/18/2020 10:26:44 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:26:46 AM: [ 127.0.0.1 - - [18/Dec/2020 10:26:46] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:26:47 AM: [ Exception on /hello_chatbot [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 79, in hello_chatbot
+    return format_output(out)
+  File "index.py", line 28, in format_output
+    rs = rs.strip()
+AttributeError: 'list' object has no attribute 'strip'
+12/18/2020 10:26:47 AM: [ 127.0.0.1 - - [18/Dec/2020 10:26:47] "[35m[1mPOST /hello_chatbot HTTP/1.1[0m" 500 - ]
+12/18/2020 10:26:53 AM: [ Exception on /keep_conversation_chatbot [POST] ]
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Anaconda3\envs\chatbot\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "index.py", line 66, in keep_conversation_chatbot
+    return format_output(out)
+  File "index.py", line 28, in format_output
+    rs = rs.strip()
+AttributeError: 'list' object has no attribute 'strip'
+12/18/2020 10:26:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:26:53] "[35m[1mPOST /keep_conversation_chatbot HTTP/1.1[0m" 500 - ]
+12/18/2020 10:27:28 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:27:30 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:30] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:30 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:30] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:36 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:36] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:36 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:36] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:37 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:37] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:37 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:37] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:38 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:38] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:38 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:38] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:27:40 AM: [ 127.0.0.1 - - [18/Dec/2020 10:27:40] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:22 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:28:23 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:23] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:24 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:24] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:25 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:25] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:26] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:26 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:26] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:27 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:27] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:27 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:27] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:27 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:27] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:28 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:28] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:28 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:28] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:30 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:30] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:32 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:32] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:33 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:33] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:34 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:34] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:36 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:36] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:38 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:38] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:41 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:41] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:28:44 AM: [ 127.0.0.1 - - [18/Dec/2020 10:28:44] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:29:24 AM: [ 127.0.0.1 - - [18/Dec/2020 10:29:24] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:29:31 AM: [ 127.0.0.1 - - [18/Dec/2020 10:29:31] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:41:05 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:41:21 AM: [ 127.0.0.1 - - [18/Dec/2020 10:41:21] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:41:22 AM: [ 127.0.0.1 - - [18/Dec/2020 10:41:22] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:41:24 AM: [ 127.0.0.1 - - [18/Dec/2020 10:41:24] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:42:14 AM: [ 127.0.0.1 - - [18/Dec/2020 10:42:14] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:43:04 AM: [ 127.0.0.1 - - [18/Dec/2020 10:43:04] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:43:54 AM: [ 127.0.0.1 - - [18/Dec/2020 10:43:54] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:43:54 AM: [ 127.0.0.1 - - [18/Dec/2020 10:43:54] "[37mPOST /bye_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:52:59 AM: [ 127.0.0.1 - - [18/Dec/2020 10:52:59] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:52:59 AM: [ 127.0.0.1 - - [18/Dec/2020 10:52:59] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:53:02 AM: [ 127.0.0.1 - - [18/Dec/2020 10:53:02] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:53:51 AM: [ 127.0.0.1 - - [18/Dec/2020 10:53:51] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:41 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:41] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/fontawesome/css/fontawesome.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/style.css HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/fontawesome/css/solid.min.css?version=5.14.0 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/jquery-3.5.1.min.js HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/img/robot_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/img/human_chat.png HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mGET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:54:53 AM: [ 127.0.0.1 - - [18/Dec/2020 10:54:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+12/18/2020 10:55:27 AM: [  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ]
+12/18/2020 10:55:56 AM: [ 127.0.0.1 - - [18/Dec/2020 10:55:56] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 10:55:56 AM: [ 127.0.0.1 - - [18/Dec/2020 10:55:56] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:55:59 AM: [ 127.0.0.1 - - [18/Dec/2020 10:55:59] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 10:56:49 AM: [ 127.0.0.1 - - [18/Dec/2020 10:56:49] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 10:57:38 AM: [ 127.0.0.1 - - [18/Dec/2020 10:57:38] "[37mPOST /bye_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 11:57:55 AM: [ 127.0.0.1 - - [18/Dec/2020 11:57:55] "[37mGET / HTTP/1.1[0m" 200 - ]
+12/18/2020 11:57:55 AM: [ 127.0.0.1 - - [18/Dec/2020 11:57:55] "[37mPOST /hello_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 11:57:57 AM: [ 127.0.0.1 - - [18/Dec/2020 11:57:57] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 11:57:59 AM: [ 127.0.0.1 - - [18/Dec/2020 11:57:59] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 11:58:04 AM: [ 127.0.0.1 - - [18/Dec/2020 11:58:04] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 11:58:30 AM: [ 127.0.0.1 - - [18/Dec/2020 11:58:30] "[37mPOST /chat HTTP/1.1[0m" 200 - ]
+12/18/2020 11:59:20 AM: [ 127.0.0.1 - - [18/Dec/2020 11:59:20] "[37mPOST /keep_conversation_chatbot HTTP/1.1[0m" 200 - ]
+12/18/2020 12:00:10 PM: [ 127.0.0.1 - - [18/Dec/2020 12:00:10] "[37mPOST /bye_chatbot HTTP/1.1[0m" 200 - ]

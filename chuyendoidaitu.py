@@ -71,34 +71,41 @@ def convert_sentence(input, n1, n2):
 # Tra ve cho nguoi dung
 def revert_sentence(sentence, n1, n2):
     for i in high_frequent_phrase:
-        sentence = sentence.replace(i, "_".join(i.split(" "))).replace(",", " , ").replace(".", " . ").replace("?", " ? ").replace("!", " ! ").replace("  ", " ")
+        sentence = sentence.replace(i, "_".join(i.split(" ")))
 
+    sentence = sentence.replace("bạn có bạn", "bạn có_bạn") # trường hợp hi hữu
     sentence = sentence.lower().split(" ")
     index = []
     for i in range(len(sentence)):
-        if ("tôi" in sentence[i]):
+        if ("tôi" == sentence[i]):
             index.append(i)
 
     for i in index:
-        if i > 1 and sentence[i-1] != "của" and sentence[i-1] in second_person:
+        if i > 1 and sentence[i-1] in second_person:
             sentence[i] = "của " + n1
         else:
             sentence[i] = n1
 
     index = []
     for i in range(len(sentence)):
-        if ("bạn" in sentence[i]):
+        if ("bạn" == sentence[i]):
             index.append(i)
 
     for i in index:
-        if i > 1 and sentence[i-1] != "của" and sentence[i-1] in second_person:
+        if i > 1 and sentence[i-1] in second_person:
             sentence[i] = "của " + n2
         else:
             sentence[i] = n2
 
-    return " ".join(sentence).lower()
+    return " ".join(sentence).lower().replace("_", " ")
 
-
+# his = []
 # while(1):
 #     sentence = input()
-#     print("--> " + revert_sentence(sentence, "mẹ", "con"))
+#     if(sentence == "q"):
+#         break
+#     # print("--> " + revert_sentence(sentence, "tao", "mày"))
+#     his.append(revert_sentence(sentence, "tao", "mày"))
+
+# for i in his:
+#     print(i)

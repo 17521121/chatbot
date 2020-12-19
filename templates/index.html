@@ -84,6 +84,7 @@
         let res=  []
         let emo = ["sentimental"]
         var interVal
+        var nb_of_loop_interval = 0
         // text trong khung chát
         let show_text = document.getElementsByClassName('show_text')[0]
         let n1 = document.getElementById("n1")
@@ -120,6 +121,11 @@
         }
 
         function keep_conversation() {
+            nb_of_loop_interval += 1
+            if (nb_of_loop_interval  == 2) {
+                clearInterval(interVal);
+                return end_chat();
+            }
             let data = { "n1": n1.value, "n2": n2.value, "emo_text": emo[emo.length - 1]}
             $.post(
                 "keep_conversation_chatbot",
@@ -138,6 +144,7 @@
                     }, 800);
                 }
             )
+           
         }
 
         function start_chat() {
@@ -214,7 +221,7 @@
             )
 
             clearInterval(interVal);
-            interVal = setInterval(keep_conversation, 40000);
+            interVal = setInterval(keep_conversation, 50000);
         }
 
         function submit_chat(e) {
