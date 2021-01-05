@@ -26,8 +26,8 @@ class Args():
     self.batch_size = 32
     self.optimizer = "adamax"
     self.train = False  # Train or evaluate
-    self.log_file = "logs/phobert_normalize_finetuned.txt"
-    self.model_file = "models/phobert_normalize_finetuned.pt"
+    self.log_file = "logs/phobert_prepend_normalize_finetune.pt.txt"
+    self.model_file = "models/phobert_prepend_normalize_finetune.pt.pt"
 
 
 option = Args()
