@@ -12,23 +12,7 @@ body {
 body {
     background-color: rgb(28, 32, 33);
 }
-/* body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-} */
-/* 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
+
 
 .container {
     width: 100%;
@@ -45,7 +29,8 @@ body {
     border-radius: 5px;
     border: 2px solid wheat;
     width: 550px;
-    height: 550px;
+    height: 650px;
+    max-height: calc(85vh - 74px);
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -120,5 +105,23 @@ body {
     word-wrap: break-word;
     resize: none;
     padding: 5px;
+}
+ 
+ 
+  
+@media only screen and (max-width: 600px) {
+    .input_box {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .input_holder {
+        width: calc(80% - 35px);
+    }
+    .show_text {
+        width: 90%;
+        height: 80vh;
+        max-height: calc(85vh - 74px);
+    }
+ 
 }
  

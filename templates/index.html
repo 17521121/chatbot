@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ fontawesome_html() }}
     <link rel="stylesheet" href=" {{ url_for('static', filename = 'style.css') }}">
-    <title>Chatbot</title>
+    <title>Chatbot biết cảm thông</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ url_for('static', filename = 'img/human_chat.png') }}">
 </head>
 
@@ -12,6 +13,7 @@
     <div class="container">
         <div class="chatbox">
             <div class="show_text">
+ 
             </div>
         </div>
 
@@ -32,21 +34,21 @@
     <script src="{{ url_for('static', filename = 'jquery-3.5.1.min.js') }}"></script>
     <script>
         let ctx = []
-        let res=  []
+        let res = []
         let emo = ["sentimental"]
         var interVal
         var nb_of_loop_interval = 0
         let show_text = document.getElementsByClassName('show_text')[0]
         let chat_text = document.getElementsByClassName("chat_text")[0]
-      
+
         let n1 = "-", n2 = "-";
         function end_chat() {
-            let data = { "n1": n1, "n2": n2, "emo_text": emo[emo.length - 1]}
+            let data = { "n1": n1, "n2": n2, "emo_text": emo[emo.length - 1] }
             $.post(
                 "bye_chatbot",
                 data,
                 function (data) { //thành công
-                    
+
                     //add chat lên khung
                     show_text.innerHTML += `
                         <div class="left">
@@ -64,16 +66,16 @@
 
         function keep_conversation() {
             nb_of_loop_interval += 1
-            if (nb_of_loop_interval  == 2) {
+            if (nb_of_loop_interval == 2) {
                 clearInterval(interVal);
                 return end_chat();
             }
-            let data = { "n1": n1, "n2": n2, "emo_text": emo[emo.length - 1]}
+            let data = { "n1": n1, "n2": n2, "emo_text": emo[emo.length - 1] }
             $.post(
                 "keep_conversation_chatbot",
                 data,
                 function (data) { //thành công
-                    
+
                     //add chat lên khung
                     show_text.innerHTML += `
                         <div class="left">
@@ -86,7 +88,7 @@
                     }, 800);
                 }
             )
-           
+
         }
 
         function start_chat() {
@@ -112,18 +114,18 @@
 
         function send_chat() {
             let send_text = [];
-            
+
             send_text = [chat_text.value.trim().replace("?", "").replace("!", "")] //turn = 1
             ctx.push(send_text[send_text.length - 1])
             let data = { "n1": n1, "n2": n2, "chat_text": send_text.join(" | ") }
-            
+
             //add chat lên khung
             show_text.innerHTML += `
                         <div class="right">
                             ${ctx[ctx.length - 1]}
                         </div>
                     `
-            
+
             //Kéo scroll xuống cuối
             $('.show_text').stop().animate({
                 scrollTop: $('.show_text')[0].scrollHeight
@@ -138,7 +140,7 @@
 
                 function (data) { //thành công
                     // lưu lại history
-                    
+
                     res.push(data.text)
                     emo.push(data.emo_text)
                     //add chat lên khung
@@ -153,7 +155,7 @@
                         scrollTop: $('.show_text')[0].scrollHeight
                     }, 800);
 
-                    if(n1 == "-") {
+                    if (n1 == "-") {
                         n1 = data.n1
                         n2 = data.n2
                     }
@@ -186,8 +188,8 @@
             //Xử lí api
             send_chat()
         }
-   
-   </script>
+
+    </script>
 
 
 </body>

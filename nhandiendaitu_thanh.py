@@ -18,7 +18,7 @@ xin chào, ba mẹ, cha mẹ, anh chị, anh chị em, ông bà, vợ chồng, c
 detect_high_frequent_phrase = detect_high_frequent_phrase.replace(", ", ",").split(",")
 
 
-def preprocess(text, split_sep = " "):
+def preprocess_pronoun(text, split_sep = " "):
     return (
         text.replace(".", " . ")
         .replace("_comma_", " , ")
@@ -34,13 +34,13 @@ def preprocess(text, split_sep = " "):
         .replace("  ", " ")
         .replace("  ", " ")
         .strip()
-        # .lower()
+        .lower()
     )
 
 N = ['mẹ','con','cha','anh','em','chú','cháu','chị','ông','bà','tớ','tao','tôi','cậu','mày','mình', 'bồ','cô','bạn','ba','bố','bác','dượng','thím']
 def get_n1n2(input):
     try:
-        input = preprocess(input)
+      
         sentence = translator.translate(input, dest ='en').text
         sentence = sentence.replace('.', ' . ')
         sentence = sentence.replace(',', ' , ')

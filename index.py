@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
 from flask_fontawesome import FontAwesome
-from flask_ngrok import run_with_ngrok
+# from flask_ngrok import run_with_ngrok
 from chatbot import *
 
 app = Flask(__name__)
 fa = FontAwesome(app)
-run_with_ngrok(app)
+# run_with_ngrok(app)
 
 def split(word): 
    return [char for char in word]  
@@ -45,7 +45,8 @@ def chat():
       n1 = request.form["n1"].lower().strip()
       n2 = request.form["n2"].lower().strip()
       chat_text = request.form["chat_text"]
-      
+      chat_text = preprocess_pronoun(chat_text) # tiền xử lí trước khi nhận diện
+
       # cho revert
       _n1 = None 
       _n2 = None 
@@ -83,7 +84,7 @@ def chat():
          outs = predict(chat_text, top_n = 3, normalize = option.normalize)
          out, emo_text = clean_answer(outs)
       out = revert_sentence(out, _n1, _n2) 
-      with open("test.txt", "a") as myfile:
+      with open("test.txt", "a", encoding="utf-8") as myfile:
          myfile.write(chat_text + "\t" + format_output(out)+"\n")
       return {"text": format_output(out), "emo_text": emo_text, "n1": n1, "n2": n2}
 
@@ -121,4 +122,4 @@ def hello_chatbot():
    return format_output(out)
 
 
-app.run()
+app.run(debug=True)
