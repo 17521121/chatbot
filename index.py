@@ -122,4 +122,4 @@ def hello_chatbot():
    return format_output(out)
 
 
-app.run(debug=True)
+app.run()
