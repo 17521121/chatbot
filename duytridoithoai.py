@@ -76,10 +76,9 @@ user_hello = [
 
 reply_hello = [
     "Tôi có thể giúp gì được bạn không ?",
-    "Có chuyện gì vậy ?",
-    "Tôi đây , có vấn đề gì với bạn sao ?",
+    "Tôi đây , bạn có vấn đề gì cần trao đổi không ?",
     "Thật hân hạnh khi bạn nhớ đến tôi , bạn có muốn nói gì với tôi à ?",
-    "Rất vui khi bạn nhắn cho tôi , có chuyện gì với bạn à ?",
+    "Rất vui khi bạn nhắn cho tôi , có tin gì mới không ?",
     "Hãy kể câu chuyện của bạn cho tôi nghe đi , tôi hứa sẽ tâm sự với bạn một cách chân thành",
     "Thật tốt khi bạn trò chuyện với tôi , thế hôm nay bạn như thế nào ?",
 ]
