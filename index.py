@@ -84,7 +84,7 @@ def chat():
          out, emo_text = clean_answer(outs)
       out = revert_sentence(out, _n1, _n2) 
       with open("test.txt", "a") as myfile:
-         myfile.write(chat_text + "\t" + format_output(out))
+         myfile.write(chat_text + "\t" + format_output(out)+"\n")
       return {"text": format_output(out), "emo_text": emo_text, "n1": n1, "n2": n2}
 
 @app.route("/keep_conversation_chatbot", methods = ["POST"])
