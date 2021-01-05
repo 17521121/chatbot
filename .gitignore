@@ -2,5 +2,6 @@ models
 torch_pre_load
 vncorenlp
 *.py[co]
-test.py
+test*.py
 ED
+logs

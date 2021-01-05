@@ -6,7 +6,7 @@ from data_loader import *
 from functions import *
 from chuyendoidaitu import *
 from duytridoithoai import *
-
+from nhandiendaitu_thanh import *
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 max_tokens_length = 256
@@ -47,7 +47,6 @@ net.eval()
 
 # --------------------------------
 all_cands = torch.load("torch_pre_load/all_cands_finetuned_normalize.pth")
-train_iter = torch.load("torch_pre_load/train_iter.pth")
 # --------------------------------
 
 

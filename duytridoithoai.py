@@ -1,15 +1,28 @@
 import random
 
-positive = [
+excited = [
     "Bạn đâu rồi , vui quá nên quên tôi rồi chăng ?",
     "Người ơi người đâu rồi ?",
     "Hay chia sẻ niềm vui cùng nhau nào đừng im lặng mà vui một mình như thế chứ ?",
     "Bạn đang tận hưởng niềm vui à ?",
-    "Có chuyện gì hay kể tôi nghe nữa , đừng im lặng thế chứ ?",
+    "Có chuyện gì hay kể tôi nghe nữa đi , đừng im lặng thế chứ ?",
     "Thật vui nếu như bạn tiếp tục trò chuyện cùng tôi đấy ",
 ]
 
-negative = [
+
+scared = [
+    "đừng quá lo lắng , bạn hãy suy nghĩ tích cực lên",
+    "lo lắng không giúp được gì đâu , sao bạn không thử kể cho tôi về những câu chuyện vui mà cậu có",
+]
+
+
+angry = [
+    "đừng giận nữa mà , bạn đang tự tổn hại sức khoẻ đó .",
+    "đăm đắm về cơn giận không phải là ý hay đâu , bạn thử xem bộ phim hoạt hình Larva xem !",
+    "Cơn giận khiến chúng ta mất đi sự minh mẫn thường có , hãy chia sẻ với tôi nếu bạn còn phiền não !",
+]
+
+sad = [
     "Bạn vẫn còn buồn à ?",
     "Bạn đâu rồi , đừng buồn nữa người ơi ?",
     "Bạn đang khóc sao ?",
@@ -24,7 +37,7 @@ neutral = [
     "Bạn gì ơi , bạn bỏ quên tôi rồi nè",
     "Tôi đang đứng đợi bạn từ chiều giờ",
     "Bạn đâu rồi ?",
-    "Thật vui nếu như bạn tiếp tục trò chuyện cùng tôi đấy ",
+    "Tôi sẽ rất vui nếu bạn tiếp tục trò chuyện cùng tôi đấy ",
 ]
 
 first_hello = [
@@ -39,6 +52,7 @@ def first_greet():
 
 user_hello = [
     "chào bạn",
+    "tôi xin chào bạn"
     "xin chào bạn",
     "hello",
     "hi",
@@ -53,10 +67,11 @@ user_hello = [
     "buổi trưa tốt lành",
     "buổi tối tốt lành",
     "chào bót",
-    "chào chát bót"
-    "chào chatbot"
-    "chào bé bót"
-    "chào bạn bót"
+    "chào chát bót",
+    "chào chatbot",
+    "chào bé bót",
+    "chào bạn bót",
+    "tôi chào bạn"
 ]
 
 reply_hello = [
@@ -69,8 +84,10 @@ reply_hello = [
     "Thật tốt khi bạn trò chuyện với tôi , thế hôm nay bạn như thế nào ?",
 ]
 
+
 def hello_user():
     return reply_hello[random.randint(0, len(reply_hello) - 1)]
+
 
 user_say_bye = [
     "bye",
@@ -89,8 +106,8 @@ user_say_bye = [
 bye_to_user = [
     "Tạm biệt bạn , rất vui khi được trò chuyện với bạn",
     "Cảm ơn bạn đã giành thời gian trò chuyện với tôi",
-    "Cảm ơn bạn , hẹn gặp lại bạn trong một ngày không xa",
-    "Cảm ơn bạn nhiều , hãy nhớ đến tôi thường xuyên nhé",
+    "Cảm ơn bạn đã nói chuyện cùng tôi , hẹn gặp lại bạn trong một ngày không xa",
+    "Cảm ơn bạn nhiều đã dành thời gian của mình , hãy nhớ đến tôi thường xuyên nhé",
     "Cảm ơn bạn vì đã trò chuyện cùng tôi , chúc bạn có một ngày vui vẻ",
     "Thật hạnh phúc khi bạn trò chuyện với tôi như thế này , tạm biệt và hẹn gặp lại bạn",
 ]
@@ -100,59 +117,67 @@ def bye_user():
     return bye_to_user[random.randint(0, len(bye_to_user) - 1)]
 
 
-# pos, neg, neu
+# excited, scared, angry, sad, neutral
 all_emotions_cls = [
     [
-        "surprised",
+        "confident",
         "impressed",
         "joyful",
-        "proud",
         "faithful",
         "excited",
         "grateful",
         "prepared",
+        "hopeful",
+        "proud",
+        "content",
+        "surprised",
         "caring",
         "trusting",
-        "hopeful",
         "anticipating",
-        "confident",
-        "content",
     ],
     [
-        "disappointed",
-        "jealous",
-        "sad",
         "afraid",
         "ashamed",
-        "lonely",
         "anxious",
-        "devastated",
-        "disgusted",
         "guilty",
-        "terrified",
-        "angry",
-        "annoyed",
         "apprehensive",
         "embarrassed",
+    ],
+    [
+        "jealous",
+        "disgusted",
+        "angry",
+        "annoyed",
         "furious",
     ],
     [
-        "sentimental",
-        "nostalgic",
+        "disappointed",
+        "sad",
+        "lonely",
+        "devastated",
+        "terrified",
     ],
+    [
+        "sentimental",
+        "nostalgic"
+    ]
 ]
 
 
+# excited, scared, angry, sad, neutral
 def keep_conversation(emo):
     if emo in all_emotions_cls[0]:
-        return positive[random.randint(0, len(positive) - 1)]
+        return excited[random.randint(0, len(excited) - 1)]
 
     if emo in all_emotions_cls[1]:
-        return negative[random.randint(0, len(negative) - 1)]
+        return scared[random.randint(0, len(scared) - 1)]
 
     if emo in all_emotions_cls[2]:
+        return angry[random.randint(0, len(angry) - 1)]
+    if emo in all_emotions_cls[3]:
+        return sad[random.randint(0, len(sad) - 1)]
+    if emo in all_emotions_cls[4]:
         return neutral[random.randint(0, len(neutral) - 1)]
-
 
 
 # emo = "sentimental"
