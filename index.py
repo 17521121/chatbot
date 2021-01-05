@@ -48,7 +48,7 @@ def chat():
       chat_text = preprocess_pronoun(chat_text) # tiền xử lí trước khi nhận diện
       while chat_text[-1] in [",", ".", "?", "!", " "]:
          chat_text = chat_text[0:-1]
-         
+
       # cho revert
       _n1 = None 
       _n2 = None 
