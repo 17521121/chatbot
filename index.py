@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
 from flask_fontawesome import FontAwesome
-# from flask_ngrok import run_with_ngrok
+from flask_ngrok import run_with_ngrok
 from chatbot import *
 
 app = Flask(__name__)
 fa = FontAwesome(app)
-# run_with_ngrok(app)
+run_with_ngrok(app)
 
 def split(word): 
    return [char for char in word]  
