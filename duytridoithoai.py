@@ -42,7 +42,8 @@ neutral = [
 
 first_hello = [
     "Chào bạn , mình họ chát tên bót , hân hạnh gặp bạn!",
-    "Mình là chatbot , bạn hãy chia sẻ câu chuyện hôm nay của bạn với mình đi."
+    "Mình là chatbot , bạn hãy chia sẻ câu chuyện hôm nay của bạn với mình đi .",
+    "Rất vui được trò chuyện với bạn , mình là chatbot biết cảm thông .",
 ]
 
 
@@ -51,6 +52,7 @@ def first_greet():
 
 
 user_hello = [
+    "alo",
     "chào bạn",
     "tôi xin chào bạn"
     "xin chào bạn",
@@ -71,7 +73,7 @@ user_hello = [
     "chào chatbot",
     "chào bé bót",
     "chào bạn bót",
-    "tôi chào bạn"
+    "tôi chào bạn",
 ]
 
 reply_hello = [
@@ -90,6 +92,7 @@ def hello_user():
 
 user_say_bye = [
     "bye",
+    "bye bye"
     "good bye",
     "goodbye",
     "tạm biệt",
@@ -99,6 +102,10 @@ user_say_bye = [
     "chào nha",
     "hẹn gặp lại",
     "bai , hẹn gặp lại",
+    "ngủ ngon",
+    "chúc bạn ngủ ngon",
+    "cút",
+    "biến",
 ]
 
 
