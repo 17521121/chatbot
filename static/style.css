@@ -122,6 +122,9 @@ body {
         height: 80vh;
         max-height: calc(85vh - 74px);
     }
+    body {
+        font-size: .9375rem;
+    }
  
 }
  
