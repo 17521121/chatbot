@@ -1,0 +1,17 @@
+# Candidates in dataset
+!gdown --id 1iz46ibBmo5Wp2jnOqNAZOP4uIfF7fgJK -O ED/train_manual.csv
+
+# vector embedding by PhoBERT as pickle 
+!gdown --id 1lcTzaNgSbmiiTOXXq6LnLz8EL1vCBVvc -O torch_pre_load/all_cands_finetuned_normalize.pth
+
+# finetuned model of PhoBERT
+!gdown --id 1-15TOYb6e-i16ZhfsoezKTEkAzxjq6t7 -O models/phobert_normalize_prepend_pretrain_finetune.pt
+
+# Download VnCoreNLP-1.1.1.jar & its word segmentation component (i.e. RDRSegmenter) 
+!mkdir -p vncorenlp/models/wordsegmenter
+!wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/VnCoreNLP-1.1.1.jar
+!wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/models/wordsegmenter/vi-vocab
+!wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/models/wordsegmenter/wordsegmenter.rdr
+!mv VnCoreNLP-1.1.1.jar vncorenlp/ 
+!mv vi-vocab vncorenlp/models/wordsegmenter/
+!mv wordsegmenter.rdr vncorenlp/models/wordsegmenter/
