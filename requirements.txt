@@ -1,6 +1,6 @@
-transformers==4.0.0,
-vncorenlp,
-fairseq==0.10.0,
-flask-ngrok,
-flask_fontawesome,
-googletrans==3.1.0a0,
+transformers==4.0.0
+vncorenlp
+fairseq==0.10.0
+flask-ngrok
+flask_fontawesome
+googletrans==3.1.0a0
