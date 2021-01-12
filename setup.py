@@ -29,6 +29,7 @@ setup(
         "fairseq==0.10.0",
         "flask-ngrok",
         "flask_fontawesome",
-        "googletrans==3.1.0a0"
+        "googletrans==3.1.0a0",
+        "gdown"
     ]
 )
