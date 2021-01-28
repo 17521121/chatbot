@@ -1,0 +1,15 @@
+Mã thực thi cho chương trình chatbot được xây dựng trên nền tảng Colab.
+
+Để chạy được code này, cần phải:
+- Chọn runtime type: GPU cho Colab
+- Đưa các tập tin thực thi trong thư mục SOURCE lên 1 folder trong Google Drive
+- %cd đến đường dẫn của thư mục chứa SOURCE
+- Chạy lệnh: !pip install -r requirements.txt (cài đặt các thư viện cần thiết)
+- Chạy lệnh: !python setup.py (tạo các folder trống để chứa pretrained, dataset, vector embedding, tập tin log)
+- Sao chép và chạy các lệnh có trong tập tin: setup_colab_cell.txt để tải các tập tin pretrained, ...
+- Đến đây:
++ Để train/valid/test model: Chạy các cell trong file phobert.ipynb
++ Để chạy giao diện demo, chạy lệnh: !python index.py
+- Các thay đổi về đường dẫn sửa tại chatbot.py (demo) hoặc trong class Args của phobert.ipynb (train/valid/test)
+
+*Để chạy file thực thi trên anaconda, cần khởi tạo môi trường ảo và cài đặt thư viện pytorch version >=1.7.0, thực hiện tương tự trên colab, nếu thiếu thư viện cần cài đặt bổ sung thủ công, ví dụ gdown, wget, tqdm, ...
