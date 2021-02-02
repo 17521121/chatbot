@@ -2,8 +2,8 @@ import random
 
 excited = [
     "Bạn đâu rồi , vui quá nên quên tôi rồi chăng ?",
-    "Người ơi người đâu rồi ?",
-    "Hay chia sẻ niềm vui cùng nhau nào đừng im lặng mà vui một mình như thế chứ ?",
+    "Bạn ơi bạn đâu rồi ?",
+    "Hay chia sẻ niềm vui cùng nhau nào bạn , đừng im lặng mà vui một mình như thế chứ ?",
     "Bạn đang tận hưởng niềm vui à ?",
     "Có chuyện gì hay kể tôi nghe nữa đi , đừng im lặng thế chứ ?",
     "Thật vui nếu như bạn tiếp tục trò chuyện cùng tôi đấy ",
@@ -12,7 +12,7 @@ excited = [
 
 scared = [
     "đừng quá lo lắng , bạn hãy suy nghĩ tích cực lên",
-    "lo lắng không giúp được gì đâu , sao bạn không thử kể cho tôi về những câu chuyện vui mà cậu có",
+    "lo lắng không giúp được gì đâu , sao bạn không thử kể cho tôi về những câu chuyện vui mà bạn có",
 ]
 
 
@@ -97,7 +97,7 @@ user_say_bye = [
     "goodbye",
     "tạm biệt",
     "tạm biệt nhé",
-    "tạm biệt cậu",
+    "tạm biệt bạn",
     "bai nhé",
     "chào nha",
     "hẹn gặp lại",
